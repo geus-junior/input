@@ -1,43 +1,73 @@
-<mat-form-field appearance="outline" class="mat-form-field">
-  <div class="div-form-field">
-    
-    <input
-      matInput
-      placeholder="Número de serie"
-      class="form-control mat-input-element"
-      autocomplete="off"
-      spacedrop
-      uppercase    
-      type="text"
-      maxlength="250"
-      aria-invalid="false"
-      aria-required="false"
-      mask="000-000-000-000-000-000-000"
-      aria-label="ISBN 1 13 digits only"
-    />
+<form novalidate="" class="ng-touched ng-dirty ng-invalid">
+  <div>
+    <mat-label>
+      Número de serie
+      <span class="span-required-field">*</span>
+    </mat-label>
 
+    <mat-form-field appearance="outline" class="mat-form-field">
+      <div class="div-form-field">
+        <input
+          matInput
+          class="form-control mat-input-element"
+          type="text"
+          placeholder="Número de serie"
+          autocomplete="off"
+          spacedrop
+          uppercase
+          maxlength="250"
+          aria-invalid="false"
+          aria-required="false"
+          mask="0000.0000.0000.0000.0000.0000.0000.0000.0000.0000.0000.0000"
+          aria-label="CODE 1 52 digits only"
+          [(ngModel)]="serialNumber"
+          name="serialNumber"
+          onfocus="this.selectionStart = this.selectionEnd = this.value.length;"
+        />
+      </div>
+    </mat-form-field>
   </div>
-  
-</mat-form-field>
 
-<mat-form-field appearance="outline" class="mat-form-field">
-  <div class="div-form-field">
-    
-    <input
-      matInput
-      placeholder="Código de liberação"
-      class="form-control mat-input-element"
-      autocomplete="off"
-      spacedrop
-      uppercase    
-      type="text"
-      maxlength="250"
-      aria-invalid="false"
-      aria-required="false"
-      mask="0000.0000.0000.0000.0000.0000.0000.0000.0000.0000.0000.0000"
-      aria-label="ISBN 1 13 digits only"
-    />
+  <div>
+    <mat-label>
+      Código de liberação
+      <span class="span-required-field">*</span>
+    </mat-label>
+    <mat-form-field appearance="outline" class="mat-form-field">
+      <div class="div-form-field">
+        <input
+          matInput
+          class="form-control mat-input-element"
+          type="text"
+          placeholder="Código de liberação"
+          autocomplete="off"
+          spacedrop
+          uppercase
+          maxlength="250"
+          aria-invalid="false"
+          aria-required="false"
+          readonly="true"
+          mask="0000.0000.0000.0000.0000.0000.0000.0000.0000.0000.0000.0000"
+          aria-label="CODE 1 52 digits only"
+          id="inputReleaseCode"
+          [(ngModel)]="releaseCode"
+          name="releaseCode"
+          onfocus="this.selectionStart = this.selectionEnd = this.value.length;"
+        />
 
+        <button
+          class="mat-icon-button"
+          [cdkCopyToClipboard]="releaseCode"
+          matTooltip="Copiar código para área de transferência"
+          (click)="onClick('inputReleaseCode')"
+        >
+          <div class="mat-icon">
+            <mat-icon class="mat-icon" role="img" inline="true"
+              >filter_none</mat-icon
+            >
+          </div>
+        </button>
+      </div>
+    </mat-form-field>
   </div>
-  
-</mat-form-field>
+</form>

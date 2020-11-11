@@ -1,114 +1,98 @@
 .mat-form-field {
-    width: 100%;
-    flex-direction: row;
-    box-sizing: border-box;
-    display: flex;
+  width: 100%;
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
 }
 
 .div-form-field {
-    flex-direction: row;
-    box-sizing: border-box;
-    display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
 }
 
 .mat-icon-button {
-    width: 25px !important;
-    height: 25px !important;
-    color: #696969;
-    cursor: pointer;
-    margin-bottom: 5;
-    height: 1.125em;
-    line-height: 1.125;
-    vertical-align: middle;
+  width: 25px !important;
+  color: #696969;
+  cursor: pointer;
+  margin-bottom: 5;
+  height: 1.125em;
+  line-height: 1.125;
+  vertical-align: middle;
 }
 
 .mat-icon {
-    width: 20px;
-    height: 20px;
-    line-height: 16px;
+  width: 20px;
+  height: 20px;
+  line-height: 16px;
 }
 
 .mat-input-element {
-    text-rendering: auto;
-    -webkit-rtl-ordering: logical;
-    cursor: text;
-    color: #696969 !important;
-    font-family: Lato, "Helvetica Neue", sans-serif !important;
-    font-size: 13px !important;
-    letter-spacing: 0 !important;
-    padding: 3px 0px 4px !important;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
+  text-rendering: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  color: #696969 !important;
+  font-family: Lato, "Helvetica Neue", sans-serif !important;
+  font-size: 13px !important;
+  letter-spacing: 0 !important;
+  padding: 3px 0px 4px !important;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
 }
 
-/* mat-icon-stepper selected color change */
-
-.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
-    background-color: #b6b6b6 !important;
+.mat-step-header .mat-step-icon-selected,
+.mat-step-header .mat-step-icon-state-done,
+.mat-step-header .mat-step-icon-state-edit {
+  background-color: #b6b6b6 !important;
 }
-
-/*input outline color*/
 
 .mat-form-field-appearance-outline .mat-form-field-outline {
-    color: #b6b6b6 !important;
-    /* opacity: 1!important;*/
+  color: #b6b6b6 !important;
 }
-
-/*mat-input focused color*/
 
 .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
-    color: #b6b6b6 !important;
+  color: #b6b6b6 !important;
 }
 
-/* mat-input error outline color*/
-
-.mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick {
-    color: #b6b6b6 !important;
-    opacity: 0.8 !important;
+.mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid
+  .mat-form-field-outline-thick {
+  color: #b6b6b6 !important;
+  opacity: 0.8 !important;
 }
-
-/* mat-input carent color*/
 
 .mat-input-element {
-    caret-color: #b6b6b6 !important;
+  caret-color: #b6b6b6 !important;
 }
 
-/* mat-input error carent color*/
-
-.mat-form-field-invalid .mat-input-element, .mat-warn .mat-input-element {
-    caret-color: #b6b6b6 !important;
+.mat-form-field-invalid .mat-input-element,
+.mat-warn .mat-input-element {
+  caret-color: #b6b6b6 !important;
 }
-
-/* mat-label normal state style*/
 
 .mat-form-field-label {
-    color: rgba(0, 0, 0, 0.6) !important;
+  color: rgba(0, 0, 0, 0.6) !important;
 }
-
-/* mat-label focused style*/
 
 .mat-form-field.mat-focused .mat-form-field-label {
-    color: #b6b6b6 !important;
+  color: #b6b6b6 !important;
 }
-
-/* mat-label error style*/
 
 .mat-form-field.mat-form-field-invalid .mat-form-field-label {
-    color: #b6b6b6 !important;
+  color: #b6b6b6 !important;
 }
 
-.mat-form-field-flex>.mat-form-field-infix {
-    padding: 1px 0px !important;
-    margin-bottom: 5px;
+.mat-form-field-flex > .mat-form-field-infix {
+  padding: 1px 0px !important;
+  margin-bottom: 5px;
 }
 
 .mat-form-field-appearance-outline .mat-form-field-label {
-    margin-top: -15px;
+  margin-top: -15px;
 }
 
 label.ng-star-inserted {
-    transform: translateY(-0.59375em) scale(0.75) !important;
+  transform: translateY(-0.59375em) scale(0.75) !important;
 }
