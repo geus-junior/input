@@ -9,6 +9,7 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {DemoMaterialModule} from './app/material-module';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
+import { NgxMaskModule } from 'ngx-mask';
 
 import {FormFieldAppearanceExample} from './app/form-field-appearance-example';
 
@@ -24,6 +25,8 @@ import {FormFieldAppearanceExample} from './app/form-field-appearance-example';
     DemoMaterialModule,
     MatNativeDateModule,
     ReactiveFormsModule,
+    FormsModule, 
+    NgxMaskModule.forRoot()
   ],
   entryComponents: [FormFieldAppearanceExample],
   declarations: [FormFieldAppearanceExample],

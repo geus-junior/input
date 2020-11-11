@@ -1,14 +1,16 @@
-import {Component} from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 
 /** @title Form field appearance variants */
 @Component({
   selector: 'form-field-appearance-example',
   templateUrl: 'form-field-appearance-example.html',
-  styleUrls: ['form-field-appearance-example.css']
+  styleUrls: ['form-field-appearance-example.css'],
+  encapsulation: ViewEncapsulation.None,
 })
-export class FormFieldAppearanceExample {}
+export class FormFieldAppearanceExample {
 
+  filterValue(value: string): void {
+    
+  }
 
-/**  Copyright 2020 Google LLC. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at http://angular.io/license */
+}
